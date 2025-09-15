@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample CTS based webpages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <form id="form">
+        <table id="table" border="1">
+         <tr>
+            <td>Name:<td><input type="text" placeholder="enter your name"></td></td>
+
+         </tr>
+         <tr>
+            <td>profession:<td><input type="text" placeholder="enter your profession"></td></td>
+         </tr>
+        <tr>
+           <td id="td1"><center>Contact details:</center></td>
+    </tr>
+         <tr>
+            <td>Email:<td><input type="text" placeholder="Enter your Email"></td></td>
+         </tr>
+         <tr>
+            <td>phone no:<td><input type="text" placeholder="enter your phone no"></td></td>
+         </tr>
+        </table>
+    </form>
+
+
+    <form id="form2">
+        <table id="table2" border="1">
+            <tr><td>first Name:<td><input id="input" type="text" placeholder="Enter your first name"></td></td></tr>
+            <tr><td>Password:<td><input id="input" type="text" placeholder="enter your password" ></td></td></tr>
+       <tr><td>Re-type Password:<td><input id="input" type="text" placeholder="Re-type your password"></td></td></tr>
+       
+        </table>
+        <button id="submit">submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#td1{
+    padding-left:20px;
+}
+#body{
+    background-color: antiquewhite;
+}
+#table{
+    background-color: rgb(201, 183, 218);
+}
+#submit{
+    background-color: red;
+    color: white;
+}
+#input{
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var clickhere=document.getElementById('submit');
+clickhere.addEventListener('click',function(){
+clickhere.src=passwordfromValidation();
+});
