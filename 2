@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cts practise questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <form id="form">
+        <table id="table" border="1">
+            <tr>
+                <td>FirstName:<td><input id="demo" type="text" placeholder="enter your First name"></td></td>
+            </tr>
+            <tr>
+                <td>Password:<td ><input id="input" type="text" placeholder="Enter you password"></td></td>
+            </tr>
+            <tr><td>Re-type Password:<td><input id="input" type="text" placeholder="Re-Enter password"></td></td></tr>
+        </table>
+      <div id="dic">  <button type="button" id="submit">Submit</button></div>
+    </form>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#submit{
+    background-color: red;
+    color:white;
+
+}
+#input{
+    border-radius: 5px;
+}
+#body{
+    background: pink;
+
+}
+#table{
+    background:rgb(125, 7, 109);
+    color:white;
+}
+#dic{
+    padding-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var clickhere=document.getElementById('submit');
+clickhere.addEventListener('click',function(){
+    passworddemo();
+passwordformValidation();
+
+});
+function passwordformValidation(){
+    var clickhe=document.getElementById('input').value;
+if (clickhe.trim()==""){
+    alert("enter your password it's must");
+}
+else{
+    alert("submition is successfull");
+}
+}
+function passworddemo(){
+    var clickher=document.getElementById('demo').value;
+    if(clickher.trim()==""){
+        alert("First Name has to be entered");
+    }
+    
+}
