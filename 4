@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTS Practise 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <div id="image-display">
+     <img id="thumbnail1" src="img1.jpg">
+     <img id="thumbnail2" src="img2.jpg">
+     <img id="thumbnail3" src="img3.jpg">
+  </div>  
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#thumbnail1{
+    width:100px;
+    height: 70px;
+}
+#thumbnail2 {
+    width: 100px;
+    height: 70px;
+}
+#thumbnail3 {
+    width: 100px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var clickhere=document.getElementById('thumbnail1');
+clickhere.addEventListener('click',function(){
+clickhere.src=url('img3.jpg');
+});
+var clickhere1=document.getElementById('thumbnail2');
+clickhere1.addEventListener('click',function(){
+clickhere1.src=url('img1.jpg');
+});
+var clickhere2=document.getElementById('thumbnail3');
+clickhere2.addEventListener('click',function(){
+clickhere2.src=url('img2.jpg');
+});
