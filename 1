@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cts Practice 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1">
+        <img id="img1" src="tiger.jpg">
+        <img id="img2" src="lion.jpg">
+    </div>
+   <div id="div2"> <button id="submit" type="button">submit</button></div>
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#div1 img{
+    height:100px;
+    width:100px;
+
+}
+#img2{
+    padding-left:20px;
+}
+#submit{
+    background-color:red;
+    color:white;
+    
+
+}
+#div2{
+    padding-left: 100px;
+}
+#submit{
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+#submit:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(65, 7, 7, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var clickhere=document.getElementById('submit');
+var clickhere1=document.getElementById('img1');
+
+var clickhere2=document.getElementById('img2');
+
+
+clickhere.addEventListener('click',function(){
+resizeImages();
+});
+function resizeImages(){
+    clickhere1.style.height="150px";
+        clickhere1.style.width="150px";
+        clickhere2.style.height="150px";
+                clickhere2.style.width="150px";
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
