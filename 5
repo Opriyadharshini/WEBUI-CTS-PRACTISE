@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTS Practise 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <div>
+    <h2 id="h2">Greeting Message</h2>
+    <input type="text" id="intext" placeholder="font-size">
+    <button type="button" id="bu">button</button>
+     </div>  
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+#bu{
+    background-color: red;
+    color:white;
+    
+}
+var clickhere=document.getElementById('bu');
+var clickhere1=document.getElementById('h2');
+var clickhere2=document.getElementById('intext');
+
+clickhere.addEventListener('click',function(){
+colorchange();
+intextchange();
+});
+function colorchange(){
+clickhere1.style.color="red";
+}
+function intextchange(){
+    var cli=clickhere2.value ;
+    clickhere1.style.fontSize=cli+"px";
+}
+
+
+
+
+
+
+
+
+
+
