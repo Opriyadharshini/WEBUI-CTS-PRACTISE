@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="color-box"></div>
+    <button id="red-button" type="button">RED</button>
+    <button id="green-button" type="button">GREEN</button>
+    <button id="blue-button" type="button">BLUE</button>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+  #red-button{
+    background:red;
+    color:white;
+}
+#green-button {
+    background: green;
+    color: white;
+}
+#blue-button {
+    background: blue;
+    color: white;
+}
+#color-box{
+    height:100px;
+    width:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+var clickhere=document.getElementById('color-box');
+var clickhere2=document.getElementById('red-button');
+var clickhere3 = document.getElementById('green-button');
+var clickhere4 = document.getElementById('blue-button');
+clickhere2.addEventListener('click',function(){
+clickhere.style.backgroundColor="red";
+});
+
+
+clickhere3.addEventListener('click', function () {
+    clickhere.style.backgroundColor = "green";
+});
+
+
+
+
+clickhere4.addEventListener('click', function () {
+    clickhere.style.backgroundColor = "blue";
+});
